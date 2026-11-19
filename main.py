@@ -11,6 +11,7 @@ SCREEN: pygame.Surface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Chess')
 
 def main():
+    # Set up game loop
     running = True
     while running:
         for event in pygame.event.get():
