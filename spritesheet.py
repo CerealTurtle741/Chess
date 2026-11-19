@@ -13,7 +13,7 @@ class Spritesheet:
         frame_x: int,
         frame_y: int,
         scale: int,
-        color
+        color: tuple[int, int, int] = (255, 255, 255)
         ) -> pygame.Surface:
         """
         Gets the desired image from the spritesheet and returns it to be blitted into the game
@@ -21,5 +21,5 @@ class Spritesheet:
         image = pygame.Surface((width, height)).convert_alpha()
         image.blit(self.sheet, (0,0), ((frame_x * width), (frame_y * height), width, height))
         image = pygame.transform.scale(image, (width * scale, height * scale))
-        image.set_colokey(color)
+        image.set_colorkey(color)
         return image
