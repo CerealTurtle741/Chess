@@ -1,4 +1,5 @@
 from spritesheet import Spritesheet #Importing the function that creates a sprite sheet then defines the image used and its parameters 
+from python_chess_instal import Board, Move #Importing the chess library that will be used to create the chess board and pieces
 import pygame
 from sys import exit
 SHEET = 'ChessPiecesArray.png'#Bringing in the images that will act as our 
