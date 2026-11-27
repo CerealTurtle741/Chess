@@ -26,9 +26,11 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running =False
+            board.player_input(event)
         SCREEN.fill((150, 0, 100))
         board.draw()
         pygame.display.update()
+    print(board.slot_list)
     pygame.quit()
     exit()
 
